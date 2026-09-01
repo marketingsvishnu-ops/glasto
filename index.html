@@ -28,6 +28,7 @@ body{
 .demo{
   width:70%;
   background:#111;
+  position:relative;
 }
 
 iframe{
@@ -43,6 +44,7 @@ iframe{
   display:flex;
   align-items:center;
   justify-content:center;
+  overflow-y:auto;
 }
 
 .box{
@@ -159,6 +161,33 @@ h1{
   background:#1ebe5d;
 }
 
+/* Floating Signup Button */
+.floating-signup{
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:50;
+  background:#ff1744;
+  color:#fff;
+  padding:12px 24px;
+  border-radius:8px;
+  font-size:18px;
+  font-weight:900;
+  border:3px solid #fff;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(255,23,68,0.6);
+  transition:.3s;
+  text-decoration:none;
+  display:inline-block;
+}
+
+.floating-signup:hover{
+  transform:translateX(-50%) scale(1.08);
+  background:#ff5722;
+  box-shadow:0 12px 25px rgba(255,23,68,0.8);
+}
+
 .trust{
   margin-top:16px;
   color:#ccc;
@@ -230,7 +259,8 @@ h1{
 <div class="container">
 
   <div class="demo">
-    <iframe src="https://multicric.me/"></iframe>
+    <a href="https://www.multicric.com" target="_blank" rel="noopener noreferrer" class="floating-signup">🔥 CLICK ON SIGNUP 🔥</a>
+    <iframe src="https://www.multicric.com/"></iframe>
   </div>
 
   <div class="right">
@@ -246,7 +276,7 @@ h1{
     New users can start quickly through WhatsApp.
   </p>
 
-  <div class="features">
+  <div class="features">www.multicric.com
 
     <div class="feature">
       Minimum Deposit: <span>₹100 Only</span>
