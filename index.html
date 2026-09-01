@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -20,7 +21,7 @@ body{
 
 .container{
   display:flex;
-  flex-direction:row-reverse; /* Website Right | Content Left */
+  flex-direction:row-reverse;
   min-height:100vh;
 }
 
@@ -97,6 +98,26 @@ h1{
   color:#ffd86b;
 }
 
+/* Signup Button */
+.signup-btn{
+  display:inline-block;
+  margin-top:8px;
+  padding:9px 16px;
+  background:#25D366;
+  color:#fff;
+  text-decoration:none;
+  border-radius:9px;
+  font-size:15px;
+  font-weight:800;
+  border:1px solid #1ebe5d;
+  transition:.3s;
+}
+
+.signup-btn:hover{
+  background:#1ebe5d;
+  transform:scale(1.03);
+}
+
 .website-row{
   display:flex;
   justify-content:space-between;
@@ -154,7 +175,7 @@ h1{
 
 @media(max-width:768px){
   .container{
-    flex-direction:column-reverse; /* Content Top | Website Bottom */
+    flex-direction:column-reverse;
   }
 
   .demo,
@@ -185,6 +206,11 @@ h1{
     padding:12px;
   }
 
+  .signup-btn{
+    font-size:14px;
+    padding:8px 13px;
+  }
+
   .cta{
     font-size:18px;
     padding:15px;
@@ -196,6 +222,7 @@ h1{
   }
 }
 </style>
+
 </head>
 
 <body>
@@ -209,60 +236,89 @@ h1{
   <div class="right">
     <div class="box">
 
-      <div class="badge">AUTO WEBSITE </div>
+```
+  <div class="badge">AUTO WEBSITE</div>
 
-      <h1>Get Your ID Now</h1>
+  <h1>Get Your ID Now</h1>
 
-      <p class="sub">
-        Fast auto website service with easy deposit support.
-        New users can start quickly through WhatsApp.
-      </p>
+  <p class="sub">
+    Fast auto website service with easy deposit support.
+    New users can start quickly through WhatsApp.
+  </p>
 
-      <div class="features">
-        <div class="feature">
-          Minimum Deposit: <span>₹100 Only</span>
-        </div>
+  <div class="features">
 
-        <div class="feature">
-          Welcome Bonus: <span>10%</span>
-        </div>
-
-        <div class="feature">
-          Auto website Support: <span>Click on Signup</span>
-        </div>
-
-        <div class="feature">
-          Quick Help: <span>Deposit &amp; Withdrawal Support</span>
-        </div>
-      </div>
-
-      <div class="website-row">
-        <a class="website" href="https://www.multicric.com" target="_blank">
-          🌐 www.multicric.com
-        </a>
-
-        <a class="whatsapp-small" href="https://wa.me/+447523709988" target="_blank">
-          💬 WhatsApp
-        </a>
-      </div>
-
-      <a class="cta"
-         href="https://wa.me/+447523709988?text=Hello%20I%20want%20new%20manual%20ID"
-         target="_blank">
-        📲 WhatsApp Now
-      </a>
-
-      <p class="trust">
-        ✅ Trusted Manual Support<br>
-        ✅ Simple Process<br>
-        ✅ Fast Response
-      </p>
-
-      <div class="footer">
-        18+ Only | Play Responsibly | Follow Your Local Laws | T&amp;C Apply
-      </div>
-
+    <div class="feature">
+      Minimum Deposit: <span>₹100 Only</span>
     </div>
+
+    <div class="feature">
+      Welcome Bonus: <span>10%</span>
+    </div>
+
+    <div class="feature">
+      Auto Website Support:
+      <a
+        class="signup-btn"
+        href="https://www.multicric.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Click on Signup
+      </a>
+    </div>
+
+    <div class="feature">
+      Quick Help:
+      <span>Deposit &amp; Withdrawal Support</span>
+    </div>
+
+  </div>
+
+  <div class="website-row">
+
+    <a
+      class="website"
+      href="https://www.multicric.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      🌐 www.multicric.com
+    </a>
+
+    <a
+      class="whatsapp-small"
+      href="https://wa.me/+447523709988"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      💬 WhatsApp
+    </a>
+
+  </div>
+
+  <a
+    class="cta"
+    href="https://wa.me/+447523709988?text=Hello%20I%20want%20new%20manual%20ID"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    📲 WhatsApp Now
+  </a>
+
+  <p class="trust">
+    ✅ Trusted Manual Support<br>
+    ✅ Simple Process<br>
+    ✅ Fast Response
+  </p>
+
+  <div class="footer">
+    18+ Only | Play Responsibly | Follow Your Local Laws | T&amp;C Apply
+  </div>
+
+</div>
+```
+
   </div>
 
 </div>
